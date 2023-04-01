@@ -1,0 +1,23 @@
+
+*{
+    border-radius: 20px;
+    padding: 1vh;
+    margin: 2vh;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    background-color:aqua;
+    border: 1px solid black;
+    padding: 1vh;
+    margin: 1vh;
+    box-shadow: 10px 7px 5px rgb(58, 58, 58);
+}
+main {
+    padding: 5vw;
+    margin: 2vw;
+    border: 1px solid black;
+}
+footer{
+    border: 1px solid black;
+}
