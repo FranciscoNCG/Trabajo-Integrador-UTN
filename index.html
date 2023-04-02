@@ -5,20 +5,110 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diseño de Interiores</title>
-    <link rel="stylesheet" href="./CSS/style.css">
+    <link rel="stylesheet" href="./style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&family=Open+Sans:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
-        <nav>
-            <a href="">Home</a>
-            <a href="">Presentacion</a>
-            <a href="">Diseños</a>
-            <a href="">Contacto</a>
+    <header class="header" id="inicio">
+        <nav class="menu-navegacion">
+            <a href="#inicio">Inicio</a>
+            <a href="#servicio">Servicio</a>
+            <a href="#proyectos">Proyectos</a>
+            <a href="#presentacion">Presentacion</a>
+            <a href="#contacto">Contacto</a>
         </nav>
+        <div class="contenedor head">
+            <h1 class="titulo">Diseño de interiores prueba</h1>
+            <p class="copy">Asesoramiento personalizado de la mano de profesionales del diseño.</p>
+        </div> 
     </header>
     <main>
-        <h1>Diseño de Interiores Prue</h1>
+        <section class="contenedor" id="servicio">
+            <h2 class="subtitulo">Nuestro servicio</h2>
+            <div class="contenedor-servicio">
+                <img src="Trabajo-Integrador-UTN/imagenes/service.svg">
+                <div class="designer-servicio">
+                    <div class="service">
+                    <h3 class="n-service"><span class="number">1</span>Diseño de interiores</h3>
+                    <p>Añadir, añadir texto en esta parte referente a algo. Odit quisquam
+                            velit et facilis nulla dolorum architecto, autem saepe atque enim.</p>
+                        </div>
+                    <div class="service">
+                    <h3 class="n-service"><span class="number">2</span>Profesionales de diseños</h3>
+                    <p>Añadir, añadir texto del diseño interior adipisicing elit. Odit quisquam
+                            velit et facilis nulla dolorum architecto, autem saepe atque enim.</p>
+                        </div>
+                    <div class="service">
+                    <h3 class="n-service"><span class="number">3</span>Diseño de interiores</h3>
+                    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit quisquam
+                            velit et facilis nulla dolorum architecto, autem saepe atque enim.</p>
+                    </div>
+                </div>
+            </div>
+            </section>
+            <section class="gallery" id="proyectos">
+                <div class="contenedor">
+                    <h2 class="subtitulo">Galería de proyectos</h2>
+                    <div class="contenedor-galeria">
+                        <img src="Trabajo-Integrador-UTN/imagenes/design1.jpg" alt="" class="img-galeria">
+                        <img src="Trabajo-Integrador-UTN/imagenes/design2.jpg" alt="" class="img-galeria">
+                        <img src="Trabajo-Integrador-UTN/imagenes/design3.jpg" alt="" class="img-galeria">
+                        <img src="Trabajo-Integrador-UTN/imagenes/design4.jpg" alt="" class="img-galeria">
+                        <img src="Trabajo-Integrador-UTN/imagenes/design5.jpg" alt="" class="img-galeria">
+                        <img src="Trabajo-Integrador-UTN/imagenes/design6.jpg" alt="" class="img-galeria">
+                    </div>
+                </div>
+            </section>
+            <section class="contenedor" id="presentacion">
+            <h2 class="subtitulo">Conócenos!</h2>
+            </section>
+            <section class="conocenos">
+                <div class="cont-conocenos">
+                    <img src="Trabajo-Integrador-UTN/imagenes/team.svg" alt="">
+                </div>
+            </section>
     </main>
-    <footer>
-        <p>Todos lo derechos reservados</p>
+    <footer id="contacto">
+        <div class="footer-content">
+            <div class="contact-us">
+                <h2 class="brand">L Group's Design</h2>
+                <p>Diseñamos por y para personas innovadoras.</p>
+            </div>
+            <div class="socialmedia">           
+                <a href="./" class="social-media-icon">
+                    <i class='bx bxl-facebook'></i>
+                </a>
+                <a href="./" class="social-media-icon">
+                    <i class='bx bxl-twitter' ></i>
+                </a>
+                <a href="./" class="social-media-icon">
+                    <i class='bx bxl-instagram' ></i>
+                </a>
+            </div>
+        </div>
+
+        <form  id="formularioRegistro">
+            <div class="inputContainer">
+                <label for="nombre"></label>
+                <input type="text" id="nombre" name="nombre" placeholder="Nombre y apellido" required>
+            </div>
+            <div class="inputContainer">
+                <label for="email"></label>
+                <input type="email" id="email" name="email" placeholder="Email" required>
+            </div>
+            <div class="inputContainer">
+                <label for="contrasena"></label>
+                <input type="password" id="contrasena" name="contrasena" placeholder="Zona por postal" required>
+            </div>
+
+            
+            
+            <input type="submit" value="Enviar" class="btn-enviar"/>
+        </form>
+        <p>Todos lo derechos reservados.</p>
     </footer>
+
+    
+    </body>
+</html>
