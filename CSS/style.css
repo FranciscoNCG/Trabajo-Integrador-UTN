@@ -1,23 +1,226 @@
-
 *{
-    border-radius: 20px;
-    padding: 1vh;
-    margin: 2vh;
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
 }
+html {
+    scroll-behavior: smooth;
+    }
+body {
+        font-family: 'Lobster', cursive;
+        font-family: 'Open Sans', sans-serif;   
+}
+.contenedor {
+    width:90%;
+    max-width:1200px;
+    overflow:hidden;
+    margin:auto;
+    padding:60px 0;
+}
+
+        /*   Sección de la imagen de fondo con efecto gradiente*/
+
 header {
-    display: flex;
-    justify-content: space-between;
-    background-color:aqua;
-    border: 1px solid black;
-    padding: 1vh;
-    margin: 1vh;
-    box-shadow: 10px 7px 5px rgb(58, 58, 58);
+    height:100vh;
+    background-image: linear-gradient(to right, rgba(67, 67, 67, 0.502) 0%, rgba(0, 0, 0, 0.639)100%), url(Trabajo-Integrador-UTN/imagenes/mainPic.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-attachment:fixed;
+    background-position:center;
+}
+.head {
+    padding:0;
+    height:100%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    flex-direction:column;
+    color:#fff;
+}
+.menu-navegacion{
+    background-color: rgb(128, 128, 128);
+    height:50px;
+    width:100%;
+    color:#fff;
+    padding:4vh 5vw;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    position:fixed;
+    gap:3vw;
+}
+.menu-navegacion a {
+    color:#fff;
+    text-decoration:none;
+}
+.menu-navegacion a:hover{
+    color:rgba(172, 4, 194, 0.509);
 }
 main {
-    padding: 5vw;
-    margin: 2vw;
-    border: 1px solid black;
+    min-height:90vh;
+    padding:3vh 5vw;
 }
-footer{
-    border: 1px solid black;
+footer {
+    background-color: rgb(128, 128, 128);
+    color:#fff;
+    text-align:center;
+    padding:3vw;
+    min-height:200px;
+
 }
+.footer-content {
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    flex-wrap:wrap;
+    padding-top:60px;
+    padding-bottom:40px;
+}
+.contact-us{
+    width:40%;
+    color:#fff;
+
+}
+.brand {
+    font-weight:500;
+    font-size:40px;
+}
+
+.brand+p {
+    font-weight: 500;
+}
+.social-media {
+    width:50%;
+    display:flex;
+    justify-content:flex-end;
+}
+.social-media-icon{
+    display:inline-block;
+    margin-left: 20px;
+    width:60px;
+    height:60px;
+    border:1px solid #fff;
+    border-radius:50%;
+    text-align:center;
+    color:#fff;
+    
+
+}
+.social-media-icon:hover {
+    background:#fff;
+    color:#9f8ad0;
+
+}
+.social-media-icon i {
+    font-size:30px;
+    line-height:60px;
+}
+                                            /* Formulario */
+form{
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+}
+form .inputContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    font-size: 18px;
+}
+form .inputContainer input{
+    padding: 10px;
+    background-color: #fff;
+    border: none;
+    
+    font-size: 18px;
+}
+.btn-enviar{
+    width: 200px;
+    padding: 10px ;
+    background-color: rgb(128, 128, 128);
+    color: #fff;
+    border: 1px  rgb(33, 33, 33);
+
+}
+.btn-enviar:hover{
+    transition: 1s ease-in-out;
+    background-color: #fff;
+    color: rgb(128, 128, 128);
+}
+.titulo {
+    font-size:60px;
+    margin-bottom:15px;
+}
+.copy {
+    font-weight:300;
+    font-size:25px;
+}
+                    /* Sección de servicio */
+
+.subtitulo {
+    text-align:center;
+    font-weight:300;
+    color:#9f8ad0;
+    margin-bottom:40px;
+    font-size:40px;
+}
+.contenedor-servicio{
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;
+    flex-wrap:wrap;
+}
+.contenedor-servicio img{
+    width:40%;
+}
+.designer-servicio {
+    width:45%;
+}
+.service {
+    margin-bottom:20px;   
+}
+.n-service {
+    margin-bottom:7px;
+    color:#576f8fa4;
+}
+.number {
+    display:inline-block;
+    background-image: linear-gradient(to right, #a8caba 0%, #5d4157 100%);
+    height:30px;
+    width:30px;
+    color:#fff;
+    text-align:center;
+    border-radius:50%;
+    font-weight: 700;
+    line-height:30px;
+    margin-right:5px;
+}
+
+                        /* Galeria de proyecto imagenes */
+
+.gallery {
+    background:#f2f2f2;
+}
+.contenedor-galeria{
+    display:flex;
+    justify-content:space-evenly;
+    flex-wrap:wrap;
+}
+.img-galeria{
+    width: 30%;
+    display:block;
+    margin-bottom:15px;
+    box-shadow:0 0 6px rgba(0,0,0,.5);
+    cursor:pointer;
+}
+
+/*Al CSS todavía le faltaría retoques al NAV, cambiar alguna que otra font del main como tambiéndel NAV entre otras mejoras.
+    Añadir para que las imágenes se agranden al hacerles clic o se abran en otra página.
+    Otra galería  con 6 fotos más.
+    Agregar en "Conócenos!" en la derecha una plantilla con nuestro nombre, y algo de información.
+    Mejorar el formulario y que los valores colocados en los input se muestren por 
+    la terminal al enviarlos.
+    Corregir etiquetas en caso de estar mal alguna etc.
+    
+ */
