@@ -3,9 +3,6 @@
     margin:0;
     box-sizing: border-box;
 }
-html {
-    scroll-behavior: smooth;
-    }
 body {
         font-family: 'Lobster', cursive;
         font-family: 'Open Sans', sans-serif;   
