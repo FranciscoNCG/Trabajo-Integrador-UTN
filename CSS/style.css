@@ -219,5 +219,7 @@ form .inputContainer input{
     Mejorar el formulario y que los valores colocados en los input se muestren por 
     la terminal al enviarlos.
     Corregir etiquetas en caso de estar mal alguna etc.
+    Hacer la página responsiva, tanto para celualr como PC.
+    Opcional, cambiar los valores de background-color: del nav como footer por var--(color-ejemplo) al :root para mayor comodidad.  
     
  */
