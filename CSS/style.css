@@ -19,7 +19,7 @@ body {
 
 header {
     height:100vh;
-    background-image: linear-gradient(to right, rgba(72, 34, 34, 0.502) 0%, rgba(79, 75, 75, 0.484)100%), url(Trabajo-Integrador-UTN/imagenes/mainPic.jpg);
+    background-image: linear-gradient(to right, rgba(72, 34, 34, 0.502) 0%, rgba(79, 75, 75, 0.484)100%), url(./../imagenes/mainPic.jpg);
     background-repeat:no-repeat;
     background-size:cover;
     background-attachment:fixed;
@@ -206,22 +206,52 @@ form .inputContainer input{
     flex-wrap:wrap;
 }
 .img-galeria{
-    width: 30%;
+    width: 45%;
+    transition: transform 0.3s ease-in-out; 
     display:block;
     margin-bottom:15px;
     box-shadow:0 0 6px rgba(0,0,0,.5);
     cursor:pointer;
 }
+.img-galeria:hover{
+    transform: scale(1.2);
+}
+.cards{
+    display:flex;
+    justify-content: space-evenly;
+}
+.cards .card{
+    background: rgba(76, 6, 134, 0.628);
+    display:flex;
+    width:46%;
+    height:200px;
+    align-items:center;
+    justify-content:space-evenly;
+    border-radius:5px;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,0.6);
+}
 
-/*Al CSS todavía le faltaría retoques al NAV, cambiar alguna que otra font del main como tambiéndel NAV entre otras mejoras.
-    Añadir para que las imágenes se agranden al hacerles clic o se abran en otra página.
-    Otra galería  con 6 fotos más.
-    Agregar en "Conócenos!" en la derecha una plantilla con nuestro nombre, y algo de información.
+.cards .card img{
+    width:100px;
+    height:100px;
+    object-fit:cover;
+    border:3px solid #fff;
+    border-radius:50%;
+    display:block;
+}
+.cards .card > .contenido-texto-card{
+    width:60%;
+    color:#fff;
+}
+.cards .card > .contenido-texto-card p{
+    font-weight: 300;
+    padding-top:5px;
+}
+
+/*
+ 
     Mejorar el formulario y que los valores colocados en los input se muestren por 
     la terminal al enviarlos.
-    Corregir etiquetas en caso de estar mal alguna etc.
     Hacer la página responsiva, tanto para celualr como PC.
-    Opcional, cambiar los valores de background-color: del nav como footer por var--(color-ejemplo) al :root para mayor comodidad.  
-    Hacer el sitio responsive para celulares.
     
  */
