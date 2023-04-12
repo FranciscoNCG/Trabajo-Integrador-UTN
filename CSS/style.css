@@ -35,7 +35,7 @@ header {
     color:#fff;
 }
 .menu-navegacion{
-    background-color: rgba(111, 108, 108, 0.899);
+    background-color: rgba(111, 108, 108, 0.877);
     height:50px;
     width:100%;
     color:#fff;
@@ -136,10 +136,11 @@ form .inputContainer input{
 .btn-enviar{
     width: 200px;
     padding: 10px ;
-    background-color: rgb(116, 113, 113);
+    background-color: rgb(119, 117, 117);
     color: #fff;
     border: 1px  rgb(33, 33, 33);
     border-radius: 5px;
+
 
 }
 .btn-enviar:hover{
@@ -199,7 +200,7 @@ form .inputContainer input{
                         /* Galeria de proyecto imagenes */
 
 .gallery {
-    background:#e9e7e7;
+    background:#f2f2f2;
 }
 .contenedor-galeria{
     display:flex;
@@ -214,11 +215,43 @@ form .inputContainer input{
     box-shadow:0 0 6px rgba(0,0,0,.5);
     cursor:pointer;
 }
+.img-galeria:hover{
+    transform: scale(1.2);
+}
+.cards{
+    display:flex;
+    justify-content: space-evenly;
+}
+.cards .card{
+    background: rgba(76, 6, 134, 0.628);
+    display:flex;
+    width:46%;
+    height:200px;
+    align-items:center;
+    justify-content:space-evenly;
+    border-radius:5px;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,0.6);
+}
 
-/*Al CSS todavía le faltaría retoques al NAV, cambiar alguna que otra font del main como tambiéndel NAV entre otras mejoras.
-    Añadir para que las imágenes se agranden al hacerles clic o se abran en otra página.
-    Otra galería  con 6 fotos más.
-    Agregar en "Conócenos!" en la derecha una plantilla con nuestro nombre, y algo de información.
+.cards .card img{
+    width:100px;
+    height:100px;
+    object-fit:cover;
+    border:3px solid #fff;
+    border-radius:50%;
+    display:block;
+}
+.cards .card > .contenido-texto-card{
+    width:60%;
+    color:#fff;
+}
+.cards .card > .contenido-texto-card p{
+    font-weight: 300;
+    padding-top:5px;
+}
+
+/*
+ 
     Mejorar el formulario y que los valores colocados en los input se muestren por 
     la terminal al enviarlos.
     Hacer la página responsiva, tanto para celualr como PC.
