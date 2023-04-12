@@ -206,20 +206,22 @@ form .inputContainer input{
     flex-wrap:wrap;
 }
 .img-galeria{
-    width: 30%;
+    width: 45%;
+    transition: transform 0.3s ease-in-out; 
     display:block;
     margin-bottom:15px;
     box-shadow:0 0 6px rgba(0,0,0,.5);
     cursor:pointer;
 }
+.img-galeria:hover{
+    transform: scale(1.2);
+}
 
-/*Al CSS todavía le faltaría retoques al NAV, cambiar alguna que otra font del main como tambiéndel NAV entre otras mejoras.
-    Añadir para que las imágenes se agranden al hacerles clic o se abran en otra página.
-    Otra galería  con 6 fotos más.
+/*
     Agregar en "Conócenos!" en la derecha una plantilla con nuestro nombre, y algo de información.
     Mejorar el formulario y que los valores colocados en los input se muestren por 
     la terminal al enviarlos.
-    Corregir etiquetas en caso de estar mal alguna etc.
+
     Hacer la página responsiva, tanto para celualr como PC.
     Opcional, cambiar los valores de background-color: del nav como footer por var--(color-ejemplo) al :root para mayor comodidad.  
     Hacer el sitio responsive para celulares.
