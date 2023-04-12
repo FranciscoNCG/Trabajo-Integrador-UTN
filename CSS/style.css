@@ -35,7 +35,7 @@ header {
     color:#fff;
 }
 .menu-navegacion{
-    background-color: rgba(111, 108, 108, 0.937);
+    background-color: rgba(111, 108, 108, 0.899);
     height:50px;
     width:100%;
     color:#fff;
@@ -136,9 +136,10 @@ form .inputContainer input{
 .btn-enviar{
     width: 200px;
     padding: 10px ;
-    background-color: rgb(128, 128, 128);
+    background-color: rgb(116, 113, 113);
     color: #fff;
     border: 1px  rgb(33, 33, 33);
+    border-radius: 5px;
 
 }
 .btn-enviar:hover{
@@ -198,7 +199,7 @@ form .inputContainer input{
                         /* Galeria de proyecto imagenes */
 
 .gallery {
-    background:#f2f2f2;
+    background:#e9e7e7;
 }
 .contenedor-galeria{
     display:flex;
@@ -224,7 +225,7 @@ form .inputContainer input{
     background: rgba(76, 6, 134, 0.628);
     display:flex;
     width:46%;
-    height:200px;
+    height:20vw;
     align-items:center;
     justify-content:space-evenly;
     border-radius:5px;
