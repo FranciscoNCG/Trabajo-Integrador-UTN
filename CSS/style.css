@@ -19,7 +19,7 @@ body {
 
 header {
     height:100vh;
-    background-image: linear-gradient(to right, rgba(67, 67, 67, 0.502) 0%, rgba(0, 0, 0, 0.639)100%), url(Trabajo-Integrador-UTN/imagenes/mainPic.jpg);
+    background-image: linear-gradient(to right, rgba(72, 34, 34, 0.502) 0%, rgba(79, 75, 75, 0.484)100%), url(Trabajo-Integrador-UTN/imagenes/mainPic.jpg);
     background-repeat:no-repeat;
     background-size:cover;
     background-attachment:fixed;
@@ -35,7 +35,7 @@ header {
     color:#fff;
 }
 .menu-navegacion{
-    background-color: rgb(128, 128, 128);
+    background-color: rgba(111, 108, 108, 0.937);
     height:50px;
     width:100%;
     color:#fff;
@@ -52,6 +52,7 @@ header {
 }
 .menu-navegacion a:hover{
     color:rgba(172, 4, 194, 0.509);
+    transition: ease 1s;
 }
 main {
     min-height:90vh;
