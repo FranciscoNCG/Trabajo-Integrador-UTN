@@ -140,6 +140,7 @@ form .inputContainer input{
     color: #fff;
     border: 1px  rgb(33, 33, 33);
     border-radius: 5px;
+    margin-bottom:20px;
 
 
 }
@@ -249,11 +250,24 @@ form .inputContainer input{
     font-weight: 300;
     padding-top:5px;
 }
+.contUsuarios {
+    display:flex;
+    justify-content:center;
+    width:100%;
+    flex-wrap:wrap;
+    gap:5vw;
+}
+.user-card{
+    width:350px;
+    background-color: rgba(0, 0, 0, 0.651);
+    color:rgb(252, 252, 252);
+    padding:10px;
+    border-radius:5px;
+}
+
 
 /*
- 
-    Mejorar el formulario y que los valores colocados en los input se muestren por 
-    la terminal al enviarlos.
+
     Hacer la página responsiva, tanto para celualr como PC.
     
  */
