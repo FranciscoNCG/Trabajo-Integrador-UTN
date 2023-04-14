@@ -140,6 +140,8 @@ form .inputContainer input{
     color: #fff;
     border: 1px  rgb(33, 33, 33);
     border-radius: 5px;
+    margin-bottom:20px;
+
 
 
 }
@@ -255,11 +257,57 @@ form .inputContainer input{
     justify-content: center;
     padding: 3vh;
 }
+.img-galeria:hover{
+    transform: scale(1.2);
+}
+.cards{
+    display:flex;
+    justify-content: space-evenly;
+}
+.cards .card{
+    background: rgba(76, 6, 134, 0.628);
+    display:flex;
+    width:46%;
+    height:200px;
+    align-items:center;
+    justify-content:space-evenly;
+    border-radius:5px;
+    box-shadow: 0 0 6px 0 rgba(0,0,0,0.6);
+}
+
+.cards .card img{
+    width:100px;
+    height:100px;
+    object-fit:cover;
+    border:3px solid #fff;
+    border-radius:50%;
+    display:block;
+}
+.cards .card > .contenido-texto-card{
+    width:60%;
+    color:#fff;
+}
+.cards .card > .contenido-texto-card p{
+    font-weight: 300;
+    padding-top:5px;
+}
+.contUsuarios {
+    display:flex;
+    justify-content:center;
+    width:100%;
+    flex-wrap:wrap;
+    gap:5vw;
+}
+.user-card{
+    width:350px;
+    background-color: rgba(0, 0, 0, 0.651);
+    color:rgb(252, 252, 252);
+    padding:10px;
+    border-radius:5px;
+}
 
 /*
- 
-    Mejorar el formulario y que los valores colocados en los input se muestren por 
-    la terminal al enviarlos.
+
     Hacer la página responsiva, tanto para celualr como PC.
     
  */
