@@ -32,7 +32,7 @@ header {
     justify-content:center;
     align-items:center;
     flex-direction:column;
-    color:#fff;
+    color:#ffffffef;
 }
 .menu-navegacion{
     background-color: rgba(111, 108, 108, 0.877);
@@ -61,7 +61,6 @@ main {
 footer {
     background-color: rgb(128, 128, 128);
     color:#fff;
-    text-align:center;
     padding:3vw;
     min-height:200px;
 
@@ -89,8 +88,6 @@ footer {
 }
 .social-media {
     width:50%;
-    display:flex;
-    justify-content:flex-end;
 }
 .social-media-icon{
     display:inline-block;
@@ -101,8 +98,6 @@ footer {
     border-radius:50%;
     text-align:center;
     color:#fff;
-    
-
 }
 .social-media-icon:hover {
     background:#fff;
@@ -112,6 +107,11 @@ footer {
 .social-media-icon i {
     font-size:30px;
     line-height:60px;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
                                             /* Formulario */
 form{
@@ -211,13 +211,13 @@ form .inputContainer input{
     width: 45%;
     transition: transform 0.3s ease-in-out; 
     display:block;
-    margin-bottom:15px;
+    margin-bottom:25px;
     box-shadow:0 0 6px rgba(0,0,0,.5);
     cursor:pointer;
     border-radius: 10px;
 }
 .img-galeria:hover{
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
 .cards{
     display:flex;
@@ -249,6 +249,11 @@ form .inputContainer input{
 .cards .card > .contenido-texto-card p{
     font-weight: 300;
     padding-top:5px;
+}
+.derechos{
+    display: flex;
+    justify-content: center;
+    padding: 3vh;
 }
 
 /*
