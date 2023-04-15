@@ -26,6 +26,7 @@ header {
     background-position:center;
 }
 .head {
+    text-align:center;
     padding:0;
     height:100%;
     display:flex;
