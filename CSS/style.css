@@ -313,6 +313,40 @@ form .inputContainer input{
 .derechos{
     text-align: center;
 }
+/* Agrega estilos CSS para la imagen completa */
+.img-completa {
+    max-width: 90%;
+    max-height: 90%;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 9999;
+    transition: transform 0.3s ease-in-out;
+}
+
+/* Agrega estilos CSS para los botones de anterior y siguiente */
+.btn-anterior,
+.btn-siguiente {
+    position: fixed;
+    top: 50%;
+    transform: translateY(-50%);
+    padding: 10px;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    z-index: 9999;
+}
+
+.btn-anterior {
+    left: 10px;
+}
+
+.btn-siguiente {
+    right: 10px;
+}
+
 /*
 
     Hacer la página responsiva, tanto para celualr como PC.
