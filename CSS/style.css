@@ -215,6 +215,7 @@ form .inputContainer input{
     flex-wrap:wrap;
 }
 .img-galeria{
+    object-fit:cover;
     width: 45%;
     transition: transform 0.3s ease-in-out; 
     display:block;
@@ -313,8 +314,67 @@ form .inputContainer input{
 .derechos{
     text-align: center;
 }
-/*
 
-    Hacer la página responsiva, tanto para celualr como PC.
+@media screen and (max-width:800px){
+    .menu-navegacion{
+        width:100vw;       
+    }
+    .titulo{
+        font-size:40px;
+    }
+    .contenedor-servicio{
+        width:100%;
+        margin-bottom:40px;
+    }
+    .contenedor-servicio img{
+        width:80%;
+        margin-bottom:40px;
+    }
+    .service{
+        width:65vw;
+    }
+    .img-galeria{
+        width:45%;
+    }
+    .cards{
+        
+        width:70vw;
+        font-size: 15px;
+        text-align: center;
+        justify-content: space-between;
+        
+    }
+    .card{
+        flex-direction: column;
+        min-height: 250px;
+        font-size: 10px;
+        
+    }
     
- */
+
+    .footer-content{
+        justify-content: center;
+        text-align: center;
+
+    }
+    .socialmedia{
+        width:80%;
+        justify-content: space-evenly;
+
+    }
+    .socialmedia i{
+        margin-left: 0;
+
+    }
+    .contact-us{
+        text-align: center;
+        width:80%;
+        margin-bottom: 40px;
+        
+    }
+    form{
+        width:100%;
+    }
+    
+
+}
