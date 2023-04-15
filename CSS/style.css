@@ -358,11 +358,14 @@ form .inputContainer input{
         text-align: center;
 
     }
-    .socialmedia{
+    .social-media{
         width:80%;
         justify-content: space-evenly;
-
     }
+    .social-media-icon{
+        margin-left: 0;
+    }
+    
     .socialmedia i{
         margin-left: 0;
 
@@ -376,6 +379,36 @@ form .inputContainer input{
     form{
         width:100%;
     }
-    
+}
 
+@media screen and (max-width:500px){
+    .menu-navegacion{
+        width: 100%;
+        font-size:11px;
+        gap:0;
+        padding:2vh 1vw;
+
+    }
+    .menu-navegacion a{
+        padding:2vh 2vw;
+    }
+    .titulo{
+        font-size:30px;
+    }
+    .subtitulo{
+        font-size: 30px;
+    }
+    .contenedor-servicio{
+        width: 84%;
+    }
+
+    .img-galeria{
+        width:95%;
+    }
+    .social-media{
+        width: 100%;
+    }
+    .contact-us{
+        width: 90%;
+    }
 }
